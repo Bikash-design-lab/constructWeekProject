@@ -1,0 +1,40 @@
+/* Add a gradient animation to the brand */
+.brand-animated {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c, #9d75ff, #75a9ff, #ff7eb3);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 3s ease-in-out infinite;
+    /* border:2px solid red; */
+    margin-left: 100px;
+  }
+.custom-nav-link{
+    /* border: 2px solid red; */
+    margin-left: 0px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
+    /* border:5px solid red; */
+    padding-left: 10px;
+    margin-right: 20px;
+}
+.custom-nav-link:hover {
+    background-color: #28a745; /* Success green */
+    color: #fff; /* White text */
+    border-color: #1e7e34; /* Darker green for hover */
+
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
